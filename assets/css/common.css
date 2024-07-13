@@ -1,7 +1,23 @@
 /* —————— 通用布局 —————— */
+
+.top_nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: pink;
+    z-index: 99;
+}
+
+.top_nav .nav-box {
+    display: flex;
+    width: 100%;
+}
+
+
+
 /* home 页面版心 */
 .container {
-    max-width: 1160px;
+    max-width: 1320px;
     width: 100%;
     margin: 0 auto;
 }
@@ -101,12 +117,14 @@
     display: block;
 }
 
-/* 底部模块 */
-.footer {
-    height: 100px;
-    background-color: pink;
-    margin-top: 10px;
+/* ———— footer 底部模块 ———— */
+#footer {
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+    color: #424242;
 }
+
 
 /* 其他设置 */
 @media screen and (max-width: 576px) {

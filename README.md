@@ -1,11 +1,16 @@
 本站介绍：
     - 模仿别人网站的代码，编写自己的漫画网站
-    - 除了Bootstrap的栅格系统，基本是纯前端三三剑客；小于576px的部分练习了一下媒体检测
+    - 小于576px的部分练习了一下媒体检测
     - https://v5.bootcss.com/docs/components/modal/#css
-    - 顶部导航栏：参考爱壹帆
+        - 加上 Toast、Tooltips
+        - 查看更多小工具，慢慢完善
+    - 顶部导航栏：参考顶漫画，它也是用的Bootstrap5
     - 顶部轮播图：参考天天影院
     - 漫画盒子：参考包子漫画 cn.baozimh.com
     - 动画盒子：天天影院+黑马前端课(遮罩)
+    - 友情链接 + footer：参考搜片.com  soupian.pro 
+
+    - comics_classify.html:参考包子漫画
 
 待实现：
     - 完善网站各个模块

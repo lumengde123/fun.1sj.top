@@ -1,4 +1,10 @@
 /* CSS Reset */
+/* 我引入了Bootstrap，所以不用太担心CSS初始化的内容 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html {
     font-family: sans-serif;
 }
@@ -20,10 +26,15 @@ small {
     font-size: 80%;
 }
 
+em {
+    font-style: normal;
+}
+
 .fl {
     float: left;
 }
 
+/* 清除浮动 */
 .cls::before, .cls::after {
     display: block;
     content: " ";

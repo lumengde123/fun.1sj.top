@@ -3,17 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>极梦漫画</title>
+    <title>异世界之旅</title>
     <meta name="description" content="漫画网站-收集网络上题材好、画风好的漫画">
     <meta name="keywords" content="免费漫画,漫画收藏,优质漫画,国漫,韩漫">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/common.css">
 </head>
 <body>
+    <!-- 顶部导航栏，用了Bootstrap5.这里sticky-top不会覆盖。可以用fixed-top覆盖轮播图，再来个bo-body-transparent -->
+    <nav class="navbar sticky-top navbar-expand-md bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./favicon.ico" alt="logo" width="28" height="28" style="border-radius: 5px;">
+            异世界之旅
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item px-2">
+                <a class="nav-link active" aria-current="page" href="#">首页</a>
+              </li>
+              <li class="nav-item px-2 dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  内容导航
+                </a>
+                <ul class="dropdown-menu" style="min-width: auto;">
+                  <li><a class="dropdown-item" href="#">漫画</a></li>
+                  <li><a class="dropdown-item" href="#">动画</a></li>
+                  <li><a class="dropdown-item" href="#">电影</a></li>
+                  <li><a class="dropdown-item" href="#">视频</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">其他内容</a></li>
+                </ul>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="输入关键字" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit" style="white-space: nowrap;">搜索</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    
+    
+    <!-- 顶部其他模块,例如轮播图 -->
+        
+
+    <!-- 主内容模块大盒子/版心 -->
     <div class="container">
+        <!-- 第一块大盒子：漫画 -->
         <div class="content-box" aria-label="一个大内容块">
             <div class="catalog-head" aria-label="大内容块的分类名称">
                 <div class="catalog-title"><span class="title-style"></span>漫画</div>
@@ -24,7 +70,7 @@
 
             </div>
         </div>
-        <!-- 第二块大盒子 -->
+        <!-- 第二块大盒子：动画 -->
         <div class="content-box" aria-label="一个大内容块">
             <div class="catalog-head" aria-label="大内容块的分类名称">
                 <div class="catalog-title"><span class="title-style"></span>动画</div>
@@ -37,8 +83,8 @@
                         <div class="mask"></div>
                         <img src="https://pic.rvm2.com/upload/vod/20210626-1/d26f363ff8924778a3550a51c224d9f8.webp" alt="时光代理人">
                         <span class="animtabs_top">
-                            <em class="animdate animdate_year"></em>
-                            <em class="animdate animdate_type"></em>
+                            <em class="animdate animdate_year">2021</em>
+                            <em class="animdate animdate_type">国漫</em>
                         </span>
                         <span class="animtabs_text">更新第23集</span>
                     </a>
@@ -69,12 +115,65 @@
             </div>
 
         </div>
+
+        <!-- 第三块大盒子： -->
+        <div class="content-box" aria-label="一个大内容块">
+            <div class="catalog-head" aria-label="大内容块的分类名称">
+                <div class="catalog-title"><span class="title-style"></span>视频</div>
+                <a href="#" class="more">更多</a>
+            </div>
+            <div class="items-box" aria-label="大内容块的卡片盒子">
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 友情链接模块大盒子 -->
+    <div id="friend-links" class="container">
+        <div class="content-box" aria-label="一个大内容块">
+            <div class="catalog-head" aria-label="大内容块的分类名称">
+                <div class="catalog-title"><span class="title-style"></span>友情链接</div>
+                <a href="#" class="more">申请 &gt;</a>
+            </div>
+            <div class="items-box" aria-label="大内容块的卡片盒子">
+                <a href="#" target="_blank">友情链接1</a>
+                <a href="#" target="_blank">友情链接2</a>
+                <a href="#" target="_blank">友情链接3</a>
+                <a href="#" target="_blank">友情链接1</a>
+                <a href="#" target="_blank">友情链接2</a>
+                <a href="#" target="_blank">友情链接3</a>
+                <a href="#" target="_blank">友情链接1</a>
+                <a href="#" target="_blank">友情链接2</a>
+                <a href="#" target="_blank">友情链接3</a>
+                <a href="#" target="_blank">友情链接1</a>
+                <a href="#" target="_blank">友情链接2</a>
+                <a href="#" target="_blank">友情链接3</a>
+            </div>
+        </div>
     </div>
 
     <!-- 底部模块 footrt -->
-    <footer class="footer">
-        这是底部模块，先写这么多，明天继续。
+    <footer id="footer">
+        <a target="_blank" href="https://1sj.top/">1sj.top</a> © 2024~2024
+        <div>
+            <a href="#" rel="nofollow">📲自动适配手机/客户端</a> ｜ 
+            <a href="#" rel="nofollow">联系站长</a> ｜ 
+            <a href="#" rel="nofollow">站点地图</a> ｜ 
+            <a href="#" rel="nofollow">常见问题</a>
+        </div>
+        <div>
+            <a target="_blank" href="https://1sj.top/">异世界之旅</a> 最新网址：
+            <a target="_blank" href="#">xxxxx</a> ｜
+            <a target="_blank" href="#">xxxxx</a> ｜
+            <a target="_blank" href="#">xxxxx</a> ｜
+            <a target="_blank" href="#">xxxxx</a> ｜
+            <a target="_blank" href="#">xxxxx</a> ｜
+            <a target="_blank" href="#">xxxxx</a> (国际站)
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
