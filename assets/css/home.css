@@ -112,6 +112,20 @@
     z-index: 1;                 /* 跟封面同级，会被显示的遮罩罩住 */
 }
 
+
+/* —————B站视频模块————— */
+.video-cover img {
+    transition: .1s ease-in-out;
+    transform: scale(1.05);
+}
+.video-cover:hover img {
+    transform: scale(1.1);
+}
+
+
+
+
+
 /* ———— 友链模块 ———— */
 
 #friend-links .items-box {

@@ -16,12 +16,8 @@ a {
     background-color: transparent;
     text-decoration: none;
 }
-/* 单行文本截断 */
-.text-truncate {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
+/* 单行文本截断：text-truncate */
+
 small {
     font-size: 80%;
 }

@@ -25,13 +25,13 @@
 
 /* 内容卡片的大盒子--模仿自包子漫画 */
 .items-box {
-    /* letter-spacing: -0.31em; */
-    /* background-color: pink; */
     display: flex;
     flex-flow: row wrap;
     align-content: flex-start;
     padding-bottom: 5px;
     background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.075);
 }
 
 .catalog-head {
@@ -72,6 +72,7 @@
     box-sizing: border-box; /* 确保 padding 不会影响总宽度 */
     display: block;
 }
+
 
 .item-card__poster {
     position: relative;
@@ -132,6 +133,13 @@
         width: calc(33.33% - 2px); /* 每行 3 个 */
         padding: 6px;
     }
+    .video-box {
+        padding-bottom: 10px;
+    }
+    .video-card {
+        width: calc(50% - 2px); /* 每行 2 个视频 */
+        padding: 12px;
+    }
 
     .item-card__poster {
         position: relative;
@@ -152,6 +160,10 @@
         width: calc(50% - 2px); /* 每行 2 个 */
         padding: 5px;
     }
+    .video-card {
+        width:100%;
+        padding: 10px;
+    }
     
 }
 
@@ -160,6 +172,15 @@
     .item-card {
         width: 100%; /* 每行 1 个 */
         padding: 5px;
+    }
+    .video-card {
+        padding: 10px;
+    }
+    .item-card__title {
+        padding-top: 3px;
+    }
+    .item-card__info small {
+        margin-top: 3px;
     }
 }
 

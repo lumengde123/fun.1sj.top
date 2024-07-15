@@ -19,7 +19,7 @@
 
 let mediaData = [];
 
-// 从 JSON 文件中获取数据并赋值给 mediaData 变量
+// 从 JSON 文件中获取数据并赋值给 MangaData 变量
 function fetchMangaData(jsonPath) {
   fetch(jsonPath)
     .then(response => {
@@ -38,11 +38,10 @@ function fetchMangaData(jsonPath) {
     });
 }
 
-
 // 将json中的数据渲染到items-box里面
 function renderMangaData() {
 
-    const itemBox = document.querySelector('.items-box');
+    const itemBox = document.querySelector('.manga-box');
 
     mediaData.forEach( manga => {
         // # 卡片大盒子 item-card
@@ -108,6 +107,7 @@ function renderMangaData() {
 
 }
 
+
 fetchMangaData('../../data/manga.json');
 
-
+// 通过API获取B站视频的JSON数据：https://api.bilibili.com/x/web-interface/view?bvid=BV16z421B78Z

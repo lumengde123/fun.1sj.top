@@ -4,20 +4,21 @@
     - https://v5.bootcss.com/docs/components/modal/#css
         - 加上 Toast、Tooltips
         - 查看更多小工具，慢慢完善
-    - 顶部导航栏：参考顶漫画，它也是用的Bootstrap5
-    - 顶部轮播图：参考天天影院
-    - 漫画盒子：参考包子漫画 cn.baozimh.com
-    - 动画盒子：天天影院+黑马前端课(遮罩)
-    - 友情链接 + footer：参考搜片.com  soupian.pro 
+    - √顶部导航栏：参考顶漫画，它也是用的Bootstrap5
+    - √顶部轮播图：可以用swiper.js，我暂时不需要轮播图了
+    - √漫画盒子：参考包子漫画 cn.baozimh.com
+    - √动画盒子：天天影院+黑马前端课(遮罩)
+    - 视频盒子：参考B站主页
+    - √友情链接 + footer：参考搜片.com  soupian.pro 
 
-    - comics_classify.html:参考包子漫画
+    - comics_classify.html:参考包子漫画、顶漫画
 
 待实现：
+    - 媒体查询时，视频盒子布局和文字大小改变一下。
+    - 通过API获取视频JSON然后动态渲染标签，实现一下
     - 完善网站各个模块
     - https://m.rvm2.com/ 的轮播图，图片左上角小标签
-    - 卡片内部用定位，实现漫画标签的显示
     - 利用python动态更新json数据，把json当做静态数据库
-    - 实现影视卡片
     - 影视卡片遮罩显示卡片信息：名称、描述、主演等等
     - 实现类似B站的视频卡片
     - 实现detail.html页面
@@ -27,6 +28,9 @@
 
 参考网站：
     - 天天影院：https://m.rvm2.com/ —— 页面布局
+    - 包子漫画
+    - 顶漫画
+    - 爱壹帆
 
 笔记：
     :hover卡片的几种显示方式：
