@@ -378,9 +378,9 @@
     }
 }
 
-/* 定义小于425px的媒体查询 */
-@media (max-width: 425px) {
-    .col-425-12 {
+/* 定义小于375px的媒体查询 */
+@media (max-width: 375px) {
+    .col-375-12 {
         flex: 0 0 auto;
         width: 100%;
     }
