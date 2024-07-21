@@ -1,13 +1,7 @@
 /* CSS Reset */
 /* 我引入了Bootstrap，所以不用太担心CSS初始化的内容 */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html {
-    font-family: sans-serif;
-}
+
+
 body {
     background-color: #f2f2f2;
 }
@@ -16,27 +10,29 @@ a {
     background-color: transparent;
     text-decoration: none;
 }
-/* 单行文本截断：text-truncate */
 
-small {
-    font-size: 80%;
+a:hover {
+    /* light用red，dark用blue */
+    color: #e50914!important;
+    /* color:#00c0ff */
 }
+/* 单行文本截断：text-truncate */
+.ellipsis-2-lines {
+    display: -webkit-box; /* 必须的用于设置成盒模型显示 */
+    -webkit-line-clamp: 2; /* 显示的行数 */
+    -webkit-box-orient: vertical; /* 必须的用于设置成垂直排列的盒子模型 */
+    overflow: hidden; /* 隐藏超出的内容 */
+    text-overflow: ellipsis; /* 显示省略号 */
+    white-space: normal; /* 允许换行 */
+
+    max-height: 3.5em;
+    min-height: 3.5em;
+}
+
+
+
 
 em {
     font-style: normal;
 }
 
-.fl {
-    float: left;
-}
-
-/* 清除浮动 */
-.cls::before, .cls::after {
-    display: block;
-    content: " ";
-    clear: both;
-    height: 0;
-    font-size: 0;
-    line-height: 0;
-    overflow: hidden;
-}

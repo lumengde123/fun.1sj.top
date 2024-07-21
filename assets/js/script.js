@@ -51,7 +51,7 @@ function renderMangaData() {
         // ## 卡片封面 a + img
         const posterLink = document.createElement('a');
         posterLink.href = Object.values(manga.links)[0];
-        posterLink.classList.add('item-card__poster','manga-cover');
+        posterLink.classList.add('item-card-poster','manga-cover');
         posterLink.target = "_blank";
 
         const posterImage = document.createElement('img');
@@ -79,11 +79,11 @@ function renderMangaData() {
         // ## 卡片信息 a + div + h3 + small
         const infoLink = document.createElement('a');
         infoLink.href = Object.values(manga.links)[0];
-        infoLink.classList.add('item-card__info');
+        infoLink.classList.add('item-card-info');
         infoLink.target = "_blank";
 
         const titleDiv = document.createElement('div');
-        titleDiv.classList.add('item-card__title', 'text-truncate');
+        titleDiv.classList.add('item-card-title', 'text-truncate');
 
         const titleH3 = document.createElement('h3');
         titleH3.classList.add('text-truncate');
