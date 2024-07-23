@@ -108,6 +108,6 @@ function renderMangaData() {
 }
 
 
-fetchMangaData('../../data/manga.json');
+// fetchMangaData('../../data/manga.json');
 
 // 通过API获取B站视频的JSON数据：https://api.bilibili.com/x/web-interface/view?bvid=BV16z421B78Z

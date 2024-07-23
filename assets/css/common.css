@@ -21,15 +21,15 @@
 
 
 /* 内容卡片的大盒子--模仿自包子漫画,感觉可以全局使用了 */
-/* .items-box {
-    display: flex;
-    flex-flow: row wrap;
+.items-box {
+    /* display: flex; __ card-body已经有了flex，不要重复写*/
+    flex-wrap: wrap;
     align-content: flex-start;
-    padding-bottom: 5px;
+    padding: 1rem;
     background-color: #fff;
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-} */
+}
 
 .catalog-head {
     width: 100%;
@@ -289,7 +289,6 @@
 
 
 /* 新的CSS */
-
 
 .bili-card .poster-container {
     position: relative;

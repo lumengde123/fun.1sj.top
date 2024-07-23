@@ -15,17 +15,23 @@
 
 一些技巧：
     - img 获取src失败时，布局变乱。需要进行设置高度进行占位。为了适应响应式，这里设置为容器padding-top:130%相对定位，img绝对定位覆盖上去
+    - B站API地址：https://api.bilibili.com/x/web-interface/view?bvid=BV16z421B78Z，修改BV号即可。如果是合集JSON会很长要特殊处理
 
 待实现：
+    - 研究一下导航栏的滚动怎么实现，手机端很必要
+    - 可以在大盒子嵌入导航站那种的小卡片
+    - 加一个滑动导航代替顶部导航？
+    - 图片背景可以嵌入Bootstrap的读取图标+绝对定位
+    - 用Bootstrap的form组件，例如toolbar的textarea
+    - 新闻盒子参考Bootstrap的助手->延伸链接、通用类->弹性盒子->媒体对象
     - 主页是否需要设置评分的小角标
-    主页顶部可以是左侧小轮播图 右侧几个卡片，类似B站那样
+    - 主页顶部可以是左侧小轮播图 右侧几个卡片，类似B站那样
     - 跳转到details页面，可以用 手风琴/折叠 分享网站或其他内容
     - Toasts 可以每5秒显示一个新闻，主页也可以用用
     - 媒体查询时，视频盒子布局和文字大小改变一下。
     - 通过API获取视频JSON然后动态渲染标签，实现一下
     - 完善网站各个模块
     - 利用python动态更新json数据，把json当做静态数据库
-    - 影视卡片遮罩显示卡片信息：名称、描述、主演等等
     - 实现detail.html页面
     - 实现利用js从json文件提取信息，制作json文件
     - 做一下SEO优化
@@ -79,6 +85,20 @@
     git commit -m "描述你的更改内容"
 
     # 4. 推送更改到远程仓库
+    git push origin main
+
+# 改变仓库名后本地需要修改
+    # 1. 查看当前远程仓库 URL
+    git remote -v
+
+    # 2. 更新远程仓库 URL
+    git remote set-url origin https://github.com/yourusername/new-repo-name.git
+
+    # 3. 验证更新
+    git remote -v
+
+    # 4. 正常进行 push/pull 操作
+    git pull origin main
     git push origin main
 
 
