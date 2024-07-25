@@ -11,11 +11,14 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    /* light用red，dark用blue */
+.hover_red a:hover {
     color: #e50914!important;
-    /* color:#00c0ff */
 }
+.hover_blue a:hover {
+    color: #00c0ff!important;
+}
+
+
 /* 单行文本截断：text-truncate */
 .ellipsis-2-lines {
     display: -webkit-box; /* 必须的用于设置成盒模型显示 */

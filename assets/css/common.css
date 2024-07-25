@@ -1,16 +1,5 @@
 /* —————— 通用布局 —————— */
-/* 给轮播图设置固定高度并隐藏超出部分 */
-#carouselExampleCaptions {
-    height: 400px;
-    overflow: hidden;
-}
 
-/* 让图片适应容器并剪裁多余部分 */
-#carouselExampleCaptions .carousel-item img {
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
-}
 
 /* home 页面版心 */
 .container {
@@ -79,9 +68,10 @@
     width: 100%;
     padding-top: 133%;
     /* 如果网不好，则图片会显示默认图片 */
-    background: url(../images/default_cover.webp) no-repeat;
-    background-size: contain;
+    background: url(../images/load.gif) no-repeat;
+    background-size: cover;
 }
+
 
 .item-card-poster img {
     position: absolute;
@@ -241,55 +231,6 @@
 
 
 /* —————B站视频模块————— */
-.video-cover img {
-    transition: .1s ease-in-out;
-    transform: scale(1.05);
-}
-.video-cover:hover img {
-    transform: scale(1.1);
-}
-
-.item-card-poster {
-    position: relative;
-    overflow: hidden;
-    display: block;
-    border-radius: 3px;
-    width: 100%;
-    padding-top: 133%;
-    /* 如果网不好，则图片会显示默认图片 */
-    background: url(../images/default_cover.webp) no-repeat;
-    background-size: contain;
-}
-
-
-
-/* ———— 友链模块 ———— */
-
-#friend-links .card-body {
-    padding: 20px 20px 10px;
-}
-
-#friend-links .card-body a {
-    font-size: 14px;
-    margin: 0 15px 10px 0;
-    white-space: nowrap;
-}
-
-#friend-links .catalog-head a {
-    border: 0;
-    color: rgb(229, 9, 20);
-    font-size: 14px;
-}
-
-
-
-/* 其他设置 */
-
-
-
-
-/* 新的CSS */
-
 .bili-card .poster-container {
     position: relative;
     overflow: hidden;
@@ -365,6 +306,39 @@
     font-size: 0.9rem;
     color: gray;
 }
+
+
+
+
+
+/* ———— 友链模块 ———— */
+
+#friend-links .card-body {
+    padding: 20px 20px 10px;
+}
+
+#friend-links .card-body a {
+    font-size: 14px;
+    margin: 0 15px 10px 0;
+    white-space: nowrap;
+}
+
+#friend-links .catalog-head a {
+    border: 0;
+    color: rgb(229, 9, 20);
+    font-size: 14px;
+}
+
+
+
+/* 其他设置 */
+
+
+
+
+/* 新的CSS */
+
+
 
 
 
